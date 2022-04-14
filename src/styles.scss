@@ -5,6 +5,16 @@
   box-sizing: border-box;
 }
 
+:root {
+  --primary-color: #ff4321;
+  --secondary-color: #313131;
+}
+
+.dark-theme {
+  --primary-color: #313131;
+  --secondary-color: #fff;
+}
+
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 
 body {

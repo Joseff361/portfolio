@@ -1,0 +1,35 @@
+.header {
+  height: 60px;
+  border: 1px solid pink;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    width: 30%;
+
+    img {
+      max-width: 150px;
+      height: auto;
+    }
+  }
+
+  &__info {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    span {
+      cursor: pointer;
+      padding-bottom: 5px;
+    }
+  }
+}
+
+.active {
+  color: var(--primary-color);
+  border-bottom-width: 2px;
+  border-bottom-style: solid;
+  border-bottom-color: var(--primary-color);
+}

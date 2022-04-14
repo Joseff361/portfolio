@@ -1,1 +1,16 @@
-<p>header works!</p>
+<header class="header">
+  <div class="header__logo">
+    <img src="assets/logo.png" alt="" />
+  </div>
+  <div class="header__info">
+    <span
+      routerLink="/home"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >Home</span
+    >
+    <span routerLink="/about" routerLinkActive="active">About</span>
+    <span routerLink="/portfolio" routerLinkActive="active">Portfolio</span>
+    <span routerLink="/contact" routerLinkActive="active">Contact</span>
+  </div>
+</header>
