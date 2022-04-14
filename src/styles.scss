@@ -7,16 +7,21 @@
 
 :root {
   --primary-color: #ff4321;
-  --secondary-color: #313131;
+  --text-color: #313131;
+  --bg-color: #fff;
+
+  --animate-duration: 1s;
+  --animate-delay: 0.9s;
 }
 
 .dark-theme {
-  --primary-color: #313131;
-  --secondary-color: #fff;
+  --text-color: #fff;
+  --bg-color: #130f0f;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
 
 body {
   font-family: "Roboto Mono", monospace;
+  background-color: var(--bg-color);
 }

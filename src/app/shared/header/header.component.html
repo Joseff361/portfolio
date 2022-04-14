@@ -1,6 +1,6 @@
 <header class="header">
   <div class="header__logo">
-    <img src="assets/logo.png" alt="" />
+    <img src="assets/logo.png" alt="Logo Image" />
   </div>
   <div class="header__info">
     <span
@@ -12,5 +12,13 @@
     <span routerLink="/about" routerLinkActive="active">About</span>
     <span routerLink="/portfolio" routerLinkActive="active">Portfolio</span>
     <span routerLink="/contact" routerLinkActive="active">Contact</span>
+    <i
+      *ngIf="isDarkOn; else moon"
+      class="fa-regular fa-sun yellow"
+      (click)="swicthMode()"
+    ></i>
+    <ng-template #moon
+      ><i class="fa-regular fa-moon" (click)="swicthMode()"></i
+    ></ng-template>
   </div>
 </header>

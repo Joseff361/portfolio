@@ -4,6 +4,8 @@
   padding: 20px;
   display: flex;
   flex-direction: column;
+  height: 100%;
+  overflow: hidden;
 
   &__content {
     flex-grow: 1;

@@ -1,9 +1,9 @@
 .header {
   height: 60px;
-  border: 1px solid pink;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  color: var(--text-color);
 
   &__logo {
     width: 30%;
@@ -24,6 +24,10 @@
       cursor: pointer;
       padding-bottom: 5px;
     }
+
+    i {
+      cursor: pointer;
+    }
   }
 }
 
@@ -32,4 +36,8 @@
   border-bottom-width: 2px;
   border-bottom-style: solid;
   border-bottom-color: var(--primary-color);
+}
+
+.yellow {
+  color: rgb(238, 238, 54);
 }
