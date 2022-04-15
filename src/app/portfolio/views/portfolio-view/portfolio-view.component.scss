@@ -16,3 +16,13 @@
     overflow: auto !important;
   }
 }
+
+@media only screen and (max-width: 768px) {
+  .portfolio {
+    &__content {
+      grid-template-columns: 1fr;
+      padding-right: 10px;
+      margin-bottom: 40px;
+    }
+  }
+}

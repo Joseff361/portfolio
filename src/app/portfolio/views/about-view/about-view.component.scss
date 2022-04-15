@@ -32,3 +32,13 @@
     }
   }
 }
+
+@media only screen and (max-width: 576px) {
+  .about {
+    &__content {
+      &__skills {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+      }
+    }
+  }
+}

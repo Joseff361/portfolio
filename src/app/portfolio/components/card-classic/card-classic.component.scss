@@ -39,3 +39,16 @@
     }
   }
 }
+
+@media only screen and (max-width: 576px) {
+  .cardcl {
+    font-size: 12px;
+
+    &__content {
+      &__action {
+        padding: 5px !important;
+        text-align: center;
+      }
+    }
+  }
+}

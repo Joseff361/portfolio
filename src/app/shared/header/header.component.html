@@ -21,4 +21,40 @@
       ><i class="fa-regular fa-moon" (click)="swicthMode()"></i
     ></ng-template>
   </div>
+  <div class="header__menu">
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon>list</mat-icon>
+    </button>
+  </div>
 </header>
+
+
+<mat-menu #menu="matMenu">
+  <button mat-menu-item>
+    <span
+      routerLink="/home"
+      routerLinkActive="active"
+      [routerLinkActiveOptions]="{ exact: true }"
+      >Home</span
+    >
+  </button>
+  <button mat-menu-item>
+    <span routerLink="/about" routerLinkActive="active">About</span>
+  </button>
+  <button mat-menu-item>
+    <span routerLink="/portfolio" routerLinkActive="active">Portfolio</span>
+  </button>
+  <button mat-menu-item>
+    <span routerLink="/contact" routerLinkActive="active">Contact</span>
+  </button>
+  <button mat-menu-item>
+    <i
+      *ngIf="isDarkOn; else moon"
+      class="fa-regular fa-sun yellow"
+      (click)="swicthMode()"
+    ></i>
+    <ng-template #moon
+      ><i class="fa-regular fa-moon" (click)="swicthMode()"></i
+    ></ng-template>
+  </button>
+</mat-menu>

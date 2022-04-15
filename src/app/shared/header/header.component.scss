@@ -29,6 +29,10 @@
       cursor: pointer;
     }
   }
+
+  &__menu {
+    display: none;
+  }
 }
 
 .active {
@@ -40,4 +44,34 @@
 
 .yellow {
   color: rgb(238, 238, 54);
+}
+
+button {
+  appearance: none !important;
+  background-color: transparent !important;
+  border: none;
+
+  cursor: pointer;
+  color: var(--primary-color);
+}
+
+@media only screen and (max-width: 576px) {
+  .header {
+    &__info {
+      display: none;
+    }
+
+    &__menu {
+      display: block;
+    }
+  }
+
+  .active {
+    border-bottom-width: 0px;
+  }
+
+  button {
+    color: var(--text-color);
+    background-color: var(--bg-color) !important;
+  }
 }
