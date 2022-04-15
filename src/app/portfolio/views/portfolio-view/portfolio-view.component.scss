@@ -8,8 +8,11 @@
 
   &__content {
     margin-top: 40px;
+    padding-right: 30px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 40px;
+    height: 70vh;
+    overflow: auto !important;
   }
 }

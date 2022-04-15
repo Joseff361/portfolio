@@ -1,0 +1,19 @@
+<div class="cardcl">
+  <div class="cardcl__section">
+    <div class="cardcl__section__title">{{ title }}</div>
+  </div>
+  <div class="cardcl__content">
+    <img [src]="image" alt="Background Image" />
+    <div class="cardcl__content__actions">
+      <a class="cardcl__content__action" [href]="website" target="_blank"
+        ><i class="fa-solid fa-globe"></i>Website</a
+      >
+      <a class="cardcl__content__action" [href]="repository" target="_blank"
+        ><i class="fa-brands fa-github"></i>Repository</a
+      >
+    </div>
+  </div>
+  <div class="cardcl__section">
+    <div class="cardcl__section__subtitle">{{ subtitle }}</div>
+  </div>
+</div>

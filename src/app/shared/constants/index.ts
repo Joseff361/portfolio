@@ -2,7 +2,7 @@ import { Project, Skill } from '../interfaces/index';
 export const projects: Project[] = [
   {
     title: 'Music App',
-    subtitle: 'Search and listen previews  of your favorites songs!',
+    subtitle: 'Search and listen previews  of your favorites songs by deezer!',
     website: 'https://joseff361.github.io/music-app/',
     repository: 'https://github.com/Joseff361/music-app',
     image: 'assets/music-app.png',
