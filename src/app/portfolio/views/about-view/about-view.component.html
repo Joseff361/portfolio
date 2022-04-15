@@ -1,1 +1,23 @@
-<div class="about animate__animated animate__bounceInRight">About</div>
+<div class="about animate__animated animate__bounceInRight">
+  <h1 class="about__title">My Skills</h1>
+  <div class="about__content">
+    <h3 class="about__content__subtitle">Languages</h3>
+    <div class="about__content__skills">
+      <div *ngFor="let item of languages" class="about__content__skills__img">
+        <img [src]="item.img" alt="Skill Image" />
+      </div>
+    </div>
+    <h3 class="about__content__subtitle">Frameworks</h3>
+    <div class="about__content__skills">
+      <div *ngFor="let item of frameworks" class="about__content__skills__img">
+        <img [src]="item.img" alt="Skill Image" />
+      </div>
+    </div>
+    <h3 class="about__content__subtitle">Others</h3>
+    <div class="about__content__skills">
+      <div *ngFor="let item of others" class="about__content__skills__img">
+        <img [src]="item.img" alt="Skill Image" />
+      </div>
+    </div>
+  </div>
+</div>

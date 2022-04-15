@@ -5,3 +5,9 @@ export interface Project {
   repository: string;
   image: string;
 }
+
+export interface Skill {
+  des: string;
+  img: string;
+  link?: string;
+}

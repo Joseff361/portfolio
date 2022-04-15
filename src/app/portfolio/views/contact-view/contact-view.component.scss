@@ -1,0 +1,47 @@
+.contact {
+  display: flex;
+  height: 100%;
+
+  &__left {
+    flex: 0.5;
+    color: var(--text-color);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+
+    &__title {
+      font-size: 80px;
+    }
+
+    &__sm {
+      display: grid;
+      grid-gap: 30px;
+      grid-template-columns: 80px 80px 80px;
+
+      &__item {
+        display: flex;
+        align-items: center;
+      }
+      
+      & img {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+  }
+
+  &__right {
+    flex: 0.5;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    & img {
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}

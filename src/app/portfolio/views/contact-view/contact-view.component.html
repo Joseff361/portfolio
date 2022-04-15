@@ -1,1 +1,16 @@
-<div class="contact animate__animated animate__bounceInRight">Contact</div>
+<div class="contact animate__animated animate__bounceInRight">
+  <div class="contact__left">
+    <div class="contact__left__title">Let's talk!</div>
+    <div class="contact__left__subtitle">
+      Contact me <i class="fa-solid fa-hand-point-down"></i>
+    </div>
+    <div class="contact__left__sm">
+      <a *ngFor="let item of contacts" [href]="item.link" target="_blank" class="contact__left__sm__item">
+        <img [src]="item.img" alt="Item Image" />
+      </a>
+    </div>
+  </div>
+  <div class="contact__right">
+    <img src="assets/rocket-fast.png" alt="Background Image" />
+  </div>
+</div>
