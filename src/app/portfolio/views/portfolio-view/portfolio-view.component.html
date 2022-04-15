@@ -1,1 +1,13 @@
-<div class="portfolio animate__animated animate__bounceInRight">portfolio</div>
+<div class="portfolio animate__animated animate__bounceInRight">
+  <h1 class="portfolio__title">Projects</h1>
+  <div class="portfolio__content">
+    <app-card
+      *ngFor="let project of projects"
+      [title]="project.title"
+      [subtitle]="project.subtitle"
+      [website]="project.website"
+      [repository]="project.repository"
+      [image]="project.image"
+    ></app-card>
+  </div>
+</div>

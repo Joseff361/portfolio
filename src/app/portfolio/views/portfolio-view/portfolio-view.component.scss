@@ -1,0 +1,14 @@
+.portfolio {
+  margin-top: 50px;
+
+  &__title {
+    text-align: center;
+  }
+
+  &__content {
+    margin-top: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+  }
+}

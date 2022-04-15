@@ -8,6 +8,7 @@ import { AboutViewComponent } from './views/about-view/about-view.component';
 import { PortfolioViewComponent } from './views/portfolio-view/portfolio-view.component';
 import { ContactViewComponent } from './views/contact-view/contact-view.component';
 import { SharedModule } from '../shared/shared.module';
+import { CardComponent } from './components/card/card.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { SharedModule } from '../shared/shared.module';
     AboutViewComponent,
     PortfolioViewComponent,
     ContactViewComponent,
+    CardComponent,
   ],
   imports: [CommonModule, AppRoutingModule, SharedModule],
   exports: [PortfolioLayoutComponent],

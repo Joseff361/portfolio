@@ -1,0 +1,15 @@
+<div class="card">
+  <img [src]="image" alt="Background Image" />
+  <div class="card__content">
+    <div class="card__content__title">{{ title }}</div>
+    <div class="card__content__subtitle">{{ subtitle }}</div>
+    <div class="card__content__actions">
+      <a class="card__content__action" [href]="website" target="_blank"
+        ><i class="fa-solid fa-globe"></i>Website</a
+      >
+      <a class="card__content__action" [href]="repository" target="_blank"
+        ><i class="fa-brands fa-github"></i>Repository</a
+      >
+    </div>
+  </div>
+</div>
