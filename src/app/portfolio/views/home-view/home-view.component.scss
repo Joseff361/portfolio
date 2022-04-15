@@ -24,10 +24,10 @@
     }
 
     &__cv {
-      & button {
-        border: none;
+      & a {
         appearance: none;
         outline: none;
+        text-decoration: none;
         background-color: var(--bg-color);
 
         color: var(--text-color);
