@@ -8,6 +8,13 @@ export const projects: Project[] = [
     image: 'assets/music-app.png',
   },
   {
+    title: 'Covid19 App',
+    subtitle: 'Find the current data about covid cases around the world',
+    website: 'https://joseff361.github.io/covid-app/',
+    repository: 'https://github.com/Joseff361/covid-app',
+    image: 'assets/covid-app.png',
+  },
+  {
     title: 'Weather App',
     subtitle: 'Get the current weather depending on the city selected',
     website: 'https://joseff361.github.io/weather-app/',
@@ -16,7 +23,7 @@ export const projects: Project[] = [
   },
   {
     title: 'Countries App',
-    subtitle: 'Search basic info of each country of the world',
+    subtitle: 'Search basic description of each country of the world',
     website: 'https://joseff361.github.io/world-app/',
     repository: 'https://github.com/Joseff361/world-app',
     image: 'assets/countries-app.png',
